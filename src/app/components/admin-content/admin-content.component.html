@@ -1,0 +1,6 @@
+<!-- appShowIfRole activa la directiva para el binding, y se sigue de los valores de las propiedades de la directiva. -->
+<div appShowIfRole 
+     [requiredRole]="'admin'" 
+     [userRole]="userRole">
+    <p>Solo admin puede ver esto</p>
+</div>

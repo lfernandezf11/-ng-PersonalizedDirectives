@@ -1,0 +1,36 @@
+<div class="page-container">
+<h2>Directivas personalizadas</h2>
+  <p class="section-title">Directiva 1: Autoenfocar un input al cargar la página.</p>
+  <div class="demo-block">
+    <app-focused-input class="demo-input"></app-focused-input>
+  </div>
+
+  <p class="section-title">
+    Directiva 2: Mostrar un elemento sólo si el rol coincide.
+  </p>
+  <div>
+    <p class="section-title" style="font-size: 1rem; font-weight: 400; color: #555;">
+      Rol de prueba: 'admin'
+    </p>
+    <div class="demo-block">
+      <app-admin-content class="admin-box"></app-admin-content>
+    </div>
+  </div>
+
+  <p class="section-title">
+    Directiva 3: Contar los clicks sobre un botón.
+  </p>
+  <div class="demo-block">
+    <button class="btn" appAddCount (count)="updateCount($event)">Pulsa</button>
+    <p>{{count}} pulsaciones</p>
+  </div>
+
+  <p class="section-title">
+    Directiva 4: Agrandar un texto en el hover.
+  </p>
+  <div class="demo-block" style="position:relative;">
+    <p appUpsize style="position:absolute; left: 10; top:0;">Este texto se agranda en el hover</p>
+  </div>
+
+</div>
+<footer>Lucía Fernández Florencio</footer>
